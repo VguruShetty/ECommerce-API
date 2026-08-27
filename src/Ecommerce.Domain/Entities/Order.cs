@@ -15,6 +15,6 @@ namespace Ecommerce.Domain.Entities
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
         public string ShippingAddress { get; set; } = string.Empty;
         public string? PaymentIntentId { get; set; }
-        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
     }
 }
